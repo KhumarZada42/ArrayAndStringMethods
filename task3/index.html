@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task3 Herf sayi</title>
+</head>
+
+<body>
+    <script>
+        const herf = document.getElementById("herf");
+        let array = ['o', 'l', 'm', 'a', 'q', 'y', 'a', 'd', 'a', 'o', 'l', 'm', 'a', 'm', 'a', 'q']
+        let element = 'm'
+        find()
+        function find() {
+            let counter = 0;
+            for (let i = 0; i <= array.length; i++) {
+                if (array[i] == element) {
+                    counter++;
+                }
+            }
+            console.log(array + " => " + "m" + " => " + counter);
+        };
+
+    </script>
+</body>
+
+</html>

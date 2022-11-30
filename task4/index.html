@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task4 uppercase lowercase</title>
+</head>
+
+<body>
+    <script>
+        function Count(str) {
+            var boyuk = 0,
+                kicik = 0
+            for (var i = 0; i < str.length; i++) {
+                if (str[i] >= "A" && str[i] <= "Z") boyuk++;
+                else if (str[i] >= "a" && str[i] <= "z") kicik++;
+            }
+            document.write("boyuk: " + boyuk + "<br>");
+            document.write("kicik: " + kicik);
+        }
+        var str = "CodeForFuture";
+        Count(str);
+    </script>
+</body>
+
+</html>
